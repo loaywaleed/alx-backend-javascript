@@ -8,8 +8,9 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
       value: () => {
         if (status === 'fulfilled') {
           return value;
+        } else {
+          return reason.toString();
         }
-        return reason.toString();
       },
     })),
   );
