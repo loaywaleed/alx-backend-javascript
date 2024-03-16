@@ -1,5 +1,5 @@
 export default function cleanSet(set, startString) {
-  if (!startString || !startString.length || typeof startString !== 'string' || !(set instanceof Set)) {
+  if (!set || !startString || !startString.length || typeof startString !== 'string' || !(set instanceof Set)) {
     return '';
   }
   const newArr = [...set].filter((item) => item.startsWith(startString));
