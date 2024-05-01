@@ -1,4 +1,4 @@
-const { readFile, read } = require('fs');
+const { readFile } = require('fs');
 
 function readDatabase(filePath) {
   const students = {};
@@ -23,6 +23,6 @@ function readDatabase(filePath) {
       }
     });
   });
-};
+}
 
 export default readDatabase;
