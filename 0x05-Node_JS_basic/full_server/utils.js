@@ -1,6 +1,6 @@
 const { readFile, read } = require('fs');
 
-export default function readDatabase(filePath) {
+function readDatabase(filePath) {
   const students = {};
   return new Promise((resolve, reject) => {
     readFile(filePath, (err, data) => {
@@ -25,3 +25,4 @@ export default function readDatabase(filePath) {
   });
 };
 
+export default readDatabase;
